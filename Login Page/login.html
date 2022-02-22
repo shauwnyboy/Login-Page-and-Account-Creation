@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <div class="form-container">
+    <form id="form-login" class="form display-hidden">
+      <h1 class=" form-title">Login</h1>
+      <div id="form-login-username-container" class="form-input-container">
+        <input placeholder="Username" type="text" id="form-login-username" class="form-input" autofocus />
+      </div>
+      <div id="form-login-password-container" class="form-input-container">
+        <input type="password" placeholder="Password" type="text" id="form-login-password" class="form-input" />
+      </div>
+      <button id="button-login" class="button">Login</button>
+      <p class="form-text">
+        <a href="#" class="form-link">Forgot your password?</a>
+      </p>
+      <p class="form-text">
+        <a href="#" id="have-account-link" class="form-link">Don't have an account? Create account</a>
+      </p>
+    </form>
+    <form id="form-create-account" class="form">
+      <h1 class="form-title">Create Account</h1>
+      <div id="form-create-account-username-container" class="form-input-container">
+        <input placeholder="Username" type="text" id="form-create-account-username" class="form-input" />
+      </div>
+      <div id="invalid-username-error" class="form-login-error-message display-hidden">*Username must be at least 7
+        characters</div>
+      <div id="form-create-account-email-container" class="form-input-container">
+        <input placeholder="Email" type="text" id="form-create-account-email" class="form-input" />
+      </div>
+      <div id="invalid-email-error" class="form-login-error-message display-hidden">*Not a valid email address</div>
+      <div id="form-create-account-password-container" class="form-input-container">
+        <input type="password" placeholder="Password" type="text" id="form-create-account-password"
+          class="form-input" />
+      </div>
+      <div id="invalid-password-error" class="form-login-error-message display-hidden">*Password must be at least 7
+        characters long
+      </div>
+      <div id="form-create-account-confirm-password-container" class="form-input-container">
+        <input type="password" placeholder="Confirm Password" type="text" id="form-create-account-confirm-password"
+          class="form-input" />
+      </div>
+      <div id="mismatched-password-error" class="form-login-error-message display-hidden">*Passwords must match</div>
+      <button id="button-create-account" class="button">Create Account</button>
+      <p class="form-text">
+        <a href="#" id="no-account-link" class="form-link">Already have an account? Login</a>
+      </p>
+    </form>
+  </div>
+  <script src="login.js"></script>
+</body>
+
+</html>
